@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1061498232237",
+    "project_id": "taxibamboo-5ad20",
+    "storage_bucket": "taxibamboo-5ad20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061498232237:android:51d4e6f626f9ad8cbed524",
+        "android_client_info": {
+          "package_name": "bamboocom.example.flutter_taxiapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnaql2qcnY83WIaGBwQ-ooxReYywszMVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
