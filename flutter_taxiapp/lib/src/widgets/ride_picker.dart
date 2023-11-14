@@ -32,7 +32,7 @@ class _RidePickerState extends State<RidePicker> {
           Container(
             width: double.infinity,
             height: 50,
-            child: ElevatedButton(
+            child: TextButton(
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) => RidePickerPage(
@@ -82,7 +82,7 @@ class _RidePickerState extends State<RidePicker> {
           Container(
             width: double.infinity,
             height: 50,
-            child: ElevatedButton(
+            child: TextButton(
               onPressed: () {
                 Navigator.of(context).push(MaterialPageRoute(
                     builder: (context) =>

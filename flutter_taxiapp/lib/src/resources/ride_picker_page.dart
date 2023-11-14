@@ -51,7 +51,7 @@ class _RidePickerPageState extends State<RidePickerPage> {
                         width: 40,
                         height: 60,
                         child: Center(
-                          child: Image.asset("ic_location_black.png"),
+                          child: Image.asset("assets/ic_location_black.png"),
                         ),
                       ),
                       Positioned(
