@@ -1,18 +1,40 @@
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_taxiapp/src/app.dart';
-import 'package:flutter_taxiapp/src/bloc/auth_boc.dart';
-import 'package:flutter_taxiapp/src/resources/home_page.dart';
-import 'package:flutter_taxiapp/src/resources/login_page.dart';
-import 'package:flutter_taxiapp/src/resources/ride_picker_page.dart';
+import 'package:flutter_taxiapp/gomoku_game.dart';
 
-Future<void> main(List<String> args) async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(MyApp(
-      new AuthBloc(),
-      MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: LoginPage(),
-      )));
+void main() {
+  runApp(const GomokuApp());
+}
+
+class GomokuApp extends StatelessWidget {
+  const GomokuApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Cờ Caro đối kháng',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+        useMaterial3: true,
+      ),
+      home: const GomokuHomePage(),
+    );
+  }
+}
+
+class GomokuHomePage extends StatelessWidget {
+  const GomokuHomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Cờ Caro đối kháng'),
+        centerTitle: true,
+      ),
+      body: const SafeArea(
+        child: GomokuGame(),
+      ),
+    );
+  }
 }
